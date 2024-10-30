@@ -24,7 +24,7 @@
 
 # Features Now
 
-  - O usuario pode colocar nos inputs data, tarefa e prioridade e adicionar no bloco de tarefas.
+  - O usuario pode colocar nos inputs data, tarefa e prioridade apos isso pode-se adicionar no bloco de tarefas.
 
 
 
