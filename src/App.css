@@ -1,0 +1,229 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+
+  background: linear-gradient(0deg, #3722C3 0vh, #1A105D 90vh) ;
+
+
+}
+*{
+  box-sizing:border-box;
+  border: 0;
+  padding:0;
+  margin:0;
+}
+.form{
+  margin-top: 30px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+input:focus {
+  outline: none; /* Remove a borda de foco padrão */
+}
+.separator {
+  font-size:26px;
+  color:white;
+  font-weight:700;
+  margin-top:-5px;    
+}
+.container-father-input{
+ 
+  flex-wrap: wrap;
+  margin-left:20px;
+  padding-left:20px;
+  padding-right:10px;
+  background-color:#5601B3;
+  display:flex;
+  justify-content:space-between;
+  border-radius:15px;
+}
+.container-child-input{
+  display:flex;
+  height: 40px;
+  align-items:center;
+}
+#date, #task,#priorit{
+  background: transparent;
+  padding: 0 10px;
+  font-size: 18px;
+  color: white;
+}
+.container-child-input  #date,.date{
+  width:150px
+  
+}
+.container-child-input  #task,.task{
+  width:750px
+  
+}
+.container-child-input  #priorit,.priorit{
+  width:80px
+}
+.form button[type="submit"]{
+  border: none;
+  color:white;
+  height: 32px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: black;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color: width;
+  cursor: pointer
+}
+.all-aplication{
+  height:100vh;
+}
+
+.header-banner{
+  padding: 4%;
+
+}
+.tudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-banner h1{
+  font-size:56px;
+  text-align: center;
+  color:#f4f4f4f4;
+  /* Lista Tarefas */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.listTask{
+  margin:  1% auto 2% auto;
+  padding: 3px 20px;
+  height: 40px;
+  list-style-type: none;
+  display:flex;
+  background-color:#5601B3;
+  color:white;
+
+  border-radius:15px;
+}
+.container-List-Task{
+  padding: 2% 2%;
+  width:90%;
+  background: linear-gradient( #141414 80%, #7A7A7A);
+  height:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.header-colum{
+  color: white;
+  display:flex
+}
+
+.header-colum-colum-timer{
+  padding:0 2% 1.5% 3%
+}
+.header-colum-colum-task{
+  padding:0 2% 1.5% 5%
+
+}
+
+.header-colum-colum-priorit{
+  padding:0 2% 1.5% 60%
+}
+.listTask-checkbox{
+  background-color:black;
+  color:black
+}
+.separator.listtask{
+  padding:0;
+  margin: -1px 10px;
+ 
+}
+
+.listTask-date,.listTask-task,.listTask-priorit{
+  margin: auto 0;
+  padding:auto 0;
+}
+.listTask-priorit{
+  width:10%
+}
+.listTask-date{
+  width:7%
+}
+.listTask-task{
+  width:67%;
+}
+
+.form-Buttom {
+  background-color: #5601B3; /* Cor de fundo */
+  color: #FFFFFF; /* Cor do texto */
+  border: 2px solid #3f008a; /* Borda em roxo escuro */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  border-radius: 5px; /* Arredondamento dos cantos */
+  cursor: pointer; /* Ícone de cursor ao passar o mouse */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transição suave */
+}
+
+.form-Buttom:hover {
+  background-color: #FFFFFF; /* Fundo branco ao passar o mouse */
+  color: #5601B3; /* Texto da cor original de fundo */
+  border-color: #5601B3; /* Borda do mesmo roxo do fundo original */
+}
+
+.form-Buttom:active {
+  background-color: #000000; /* Fundo preto ao clicar */
+  color: #FFFFFF; /* Texto branco */
+  border-color: #000000; /* Borda preta */
+}
