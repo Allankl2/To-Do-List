@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import React from 'react';
 import './App.css'
-import { EventSimulator } from 'react-dom/test-utils';
 
 interface TypeNewtaskandcount {
 	novaTarefa: string;
@@ -34,7 +33,7 @@ export default function App() {
 }
 const [formData, setFormData] = useState({
   task: "",
-  priorit: "",
+  priorit: "Medio",
   date:"",
   e:""
 });
@@ -59,14 +58,9 @@ const handleChangeDate = (e:React.ChangeEvent<any>) => {
   }
   setHora(valor);
 };
-
-
- 
   return (
     <>
     <section className='all-aplication'>
-
- 
     <header className='header-banner'>
       <h1 className='title-header'>Lista de tarefas</h1>
     </header>
@@ -91,28 +85,27 @@ const handleChangeDate = (e:React.ChangeEvent<any>) => {
             </span>
           <span className="container-child-input priorit">
               <div className="separator">|</div>
-              <input type="text" placeholder="Alta" id="priorit" name="priorit" className="" onChange={handleChange}
-              />
+
+              <select id="priorit" name="priorit" onChange={handleChange} >
+              <option value="Alto">Alto</option>
+              <option value="Medio" selected>Medio</option>
+              <option value="Baixo">Baixo</option>
+              </select>
+
             </span>
             </div>
             <button className='form-Buttom' onClick={otherComponentFunction}>+</button>
             </form>
             <span className="container-child-input bottom">
-
             </span>
-
-        
             </div>
     <div>
-    
-
-
-
+  
       <div className="container-List-Task" >
         <header className='header-colum'><p className='header-colum-colum-timer'>Tempo</p> <p className='header-colum-colum-task'>Tarefas</p>   <p className='header-colum-colum-priorit'>Prioridade</p></header>
          
         {list.map(artist => (
-          <li className="listTask" key={artist.index}><input type="checkbox" className='listTask-checkbox'/><div className="separator listtask">|</div><div className="listTask-date">{artist.date} Hora(s)</div><div className="separator listtask">|</div><div className="listTask-task" >{artist.task}</div><div className="separator listtask">|</div><div className="listTask-priorit">{artist.priorit}</div></li>
+          <li className="listTask" key={artist.index}><input 3type="checkbox" className='listTask-checkbox'/><div className="separator listtask">|</div><div className="listTask-date">{artist.date} Hora(s)</div><div className="separator listtask">|</div><div className="listTask-task" >{artist.task}</div><div className="separator listtask">|</div><div className="listTask-priorit">{artist.priorit}</div><button className="listtask-delete" onClick={()=>{setList(list.filter(a=>a.index !== artist.index))}}>X</button></li>
         ))}           
       </div>
     </div>

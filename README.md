@@ -1,30 +1,30 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Discrição
 
-Currently, two official plugins are available:
+  Projeto pessoal Usado para aprender novas ferramentas,React e TypeScript, To-do-List.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  
+# Prototipo Preview Figma
 
-## Expanding the ESLint configuration
+![image](https://github.com/user-attachments/assets/a2ce9c45-bdc2-4b79-adf8-14d462ed9a11)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[link figma]([https://www.figma.com/proto/jcNBwaGxc2KU5WtzdKAbLM/To-Do-List?node-id=1-14&t=EqAnH6dWAkLYbH48-1](https://www.figma.com/community/file/1433540474909678834/to-do-list))
 
-- Configure the top-level `parserOptions` property like this:
+# Preview Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  - Ter 3 inputs onde o primeiro sera o tempo da task o segundo o nome e o terceiro qual a prioridade adicionando os 3 campos pode-se adicionar a task ao bloco de task.
+  - O Usuario pode Adicionar e remover as task
+  - o Usuario pode editar as task
+  - O usuario pode Marca como concluida as task 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Software Now
+
+![image](https://github.com/user-attachments/assets/4c0a4fe8-128e-4255-ad94-28a808e08958)
+
+# Features Now
+
+  - O usuario pode colocar nos inputs data, tarefa e prioridade apos isso pode-se adicionar no bloco de tarefas.
+
+
+

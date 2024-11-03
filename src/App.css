@@ -43,7 +43,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
 
-  background: linear-gradient(0deg, #3722C3 0vh, #1A105D 90vh) ;
+  background: linear-gradient(0deg, #3722C3 0vh, #1A105D 50vh) ;
 
 
 }
@@ -52,6 +52,7 @@ body{
   border: 0;
   padding:0;
   margin:0;
+  font-size: 17px
 }
 .form{
   margin-top: 30px;
@@ -99,9 +100,30 @@ input:focus {
   width:750px
   
 }
-.container-child-input  #priorit,.priorit{
-  width:80px
+.container-child-input  #priorit{
+  width:95px
 }
+
+option{
+  background-color:black
+}
+::-webkit-input-placeholder {
+  color: #cacaca;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: white;  
+}
+
+:-ms-input-placeholder {  
+  color: white;  
+}
+
+
 .form button[type="submit"]{
   border: none;
   color:white;
@@ -143,17 +165,7 @@ input:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.listTask{
-  margin:  1% auto 2% auto;
-  padding: 3px 20px;
-  height: 40px;
-  list-style-type: none;
-  display:flex;
-  background-color:#5601B3;
-  color:white;
 
-  border-radius:15px;
-}
 .container-List-Task{
   padding: 2% 2%;
   width:90%;
@@ -162,7 +174,7 @@ input:focus {
   margin-left:auto;
   margin-right:auto;
 }
-
+/*  Header colunm black*/
 .header-colum{
   color: white;
   display:flex
@@ -179,16 +191,32 @@ input:focus {
 .header-colum-colum-priorit{
   padding:0 2% 1.5% 60%
 }
-.listTask-checkbox{
+
+.listTask input {
   background-color:black;
-  color:black
+  color:black;
+  
 }
 .separator.listtask{
-  padding:0;
-  margin: -1px 10px;
+  padding:auto;
+  margin: auto 10px;
+
+  height: 36px;
+
  
 }
+.listTask{
+  margin:  1% auto 2% auto;
+  padding: 0 20px;
+  height: 50px;
+  list-style-type: none;
+  display:flex;
+  background-color:#5601B3;
+  color:white;
+  border: 0px;
 
+  border-radius:15px;
+}
 .listTask-date,.listTask-task,.listTask-priorit{
   margin: auto 0;
   padding:auto 0;
@@ -226,4 +254,18 @@ input:focus {
   background-color: #000000; /* Fundo preto ao clicar */
   color: #FFFFFF; /* Texto branco */
   border-color: #000000; /* Borda preta */
+}
+
+.listtask-delete{
+  background-color:transparent;
+  color: white;
+  font-size:16px;
+  height: 20px;
+  margin: auto 0;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-weight: 600
+}
+.listtask-delete:hover{
+  color:#cacaca;
 }
